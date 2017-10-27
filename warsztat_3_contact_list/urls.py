@@ -23,7 +23,7 @@ from contact_list.views.contact_add_view import ContactAddView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
-    url(r'^$', LandingView.as_view()),
+    url(r'^/?$', LandingView.as_view()),
     url(r'^contact/list$', ContactListView.as_view()),
     url(r'^contact/add$', ContactAddView.as_view()),
 ]
